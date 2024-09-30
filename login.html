@@ -1,34 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="box">
-        <div class="bg-principal">
-            <div class="bg-login">
-                <img class="icone-logo" src="imagens/Icone Logo.svg">
-                <form>
-                    <h2>Digite aqui seu login</h2>
-                    <div>
-                        <input type="text" id="login" name="login" placeholder="Digite seu usuário">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login</title>
+    <link rel="shortcut icon" href="images/img_icone_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                    <!--imagem-->
+                    <img class="img-banner" src="images/img_banner_2.png" alt="logotipo Banner" hidden>
+                    <div class="text">
+                        <h2 class="racing-sans-one-regular" hidden>Bem Vindo </h2>
+                        <i hidden>HumanizaRio</i>
+                        <p hidden>
+                            Venha conosco mudar a realidade
+                            do nosso país
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div class="input-box">
+                        <!--imagem-->
+                        <img src="/imagens/img_icone_logo.png" alt="logotipo HumanizaRio">
+                        <header>Digite aqui seu login</header>
+                        <div class="input-field">
+                            <input type="text" class="input" id="user" required autocomplete="off">
+                            <label for="">Usuário</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="passwrd" required>
+                            <label for="">Senha</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="submit" value="Login">
+                        </div>
+
+                        <div class="signin">
+                            <span>
+                                Não possui uma conta <a href="#">Clique aqui</a>
+                            </span>
+                        </div>
                     </div>
 
-                    <div>
-                        <input type="text" id="senha" name="passwrd" placeholder="Digite sua senha">
-                    </div>
+                </div>
 
-                    <div>
-                        <input type="submit" value="Log In">
-                    </div>
-                </form>
             </div>
-            
-            <div class="login-banner"></div>          
         </div>
-    </div>
-  </body>
+    </div>    
+</body>
 </html>
