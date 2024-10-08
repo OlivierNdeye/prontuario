@@ -4,7 +4,7 @@
 
 .wrapper {
     background: #ececec;
-    background-image: url("/imagens/fundo2.jpeg");
+    background-image: url("../img/fundo2.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 
 .side-image {
     background: linear-gradient(243deg, #df73e8, #16cae2);
-    background-image: url("/imagens/banner.jpg");
+    background-image: url("../img/banner.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
