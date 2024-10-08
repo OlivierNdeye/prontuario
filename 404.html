@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Erro 404 </title>
+    <!--arquivos css-->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link
+    rel="Shortcut icon"
+    href="assets/img/img_icone_logo.png"
+    type="image/x-icon"
+    />
+
+    <script>
+        WebFont.load({
+          google: { families: ["Public Sans:300,400,500,600,700"] },
+          custom: {
+            families: [
+              "Font Awesome 5 Solid",
+              "Font Awesome 5 Regular",
+              "Font Awesome 5 Brands",
+              "simple-line-icons",
+            ],
+            urls: ["assets/css/fonts.min.css"],
+          },
+          active: function () {
+            sessionStorage.fonts = true;
+          },
+        });
+      </script>
+
+</head>
+<body>
+
+    <div class="wrapper"> <!--inicio Wrapper-->
+        <aside id="sidebar"> <!--inicio Barra Lateral-->
+            <div class="d-flex">
+                <button id="toggle-btn" type="button">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">HumanizaRio</a>
+                </div>
+            </div>
+            <!--INICIO OPCÇÕES-->
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-user"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-calendar"></i>
+                        <span>Agenda</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-calendar"></i>
+                        <span>Fila de Atendimento</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" 
+                    data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="fas fa-user-check"></i>
+                        <span>Usuários</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Acessar Perfil</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Cadastro de Usuários</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" 
+                    data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="fas fa-list"></i>
+                        <span>Relatórios</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" 
+                            data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                Atendimento
+                            </a>
+                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Pacientes Atendidos</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Produção Médica</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-comment"></i>
+                        <span>Notificações</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul> 
+            <!--FIM OPCÇÕES-->
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside> <!--fim Barra Lateral-->
+
+        <div class="main"> <!--inicio Main-->
+            <nav class="navbar navbar-expand px-4 py-3">
+                <form action="#" class="d-none d-sm-inline-block">
+                    <div class="input-group input-group-navbar">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Search...">
+                        <button class="btn border-0 rounded-0" type="button">
+                            Search
+                        </button>
+                    </div>
+                </form>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-icon pe-md-0" data-bs-toggle="dropdown">
+                                <img src="assets/img/avatar.jpeg" class="avatar img-fluid" alt="avatar">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Login</span>
+                                </a>
+
+                                <a href="#" class="dropdown-item">
+                                    <i class="far fa-question-circle"></i>
+                                    suporte
+                                </a>
+    
+                                <div class="drpodown-divider"></div>
+
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Configurações</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>  
+            </nav> <!--fim Barra de Navegação-->
+            <main class="content px-3 py-4"> <!--inicio Tela principal-->
+                <div class="erro" id="erro-404">
+                    <img src="assets/img/erro.jpeg" height="200" width="300" alt="">
+                    <h2>Oops!</h2>
+                    <p>
+                        A pagina que você esta procurando foi movida ou não existe neste servidor
+                    </p>
+                </div>
+            </main> <!--fim Tela Principal-->
+
+            <footer class="footer"> <!--inicio Rodapé-->
+                <div container-fluid>
+                    <div class="row text-body-secundary">
+                        <div class="col-6 text-start">
+                            <a href="#" class="text-body-secondary">
+                                <strong>HumanizaRio</strong>
+                            </a>
+                        </div>
+                        <div class="col-6 text-end textbody-secondary d-none d-md-block">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-body-secondary">Contato</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-body-secondary">Sobre</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-body-secondary">Termos & Condições</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer> <!--Inicio Rodapé-->
+        </div> <!--fim Main -->      
+    </div> <!--fim Wrapper-->
+
+
+
+    <!--arquivos javascript-->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/core/script.js"></script>
+</body>
+
+</html>
