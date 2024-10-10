@@ -238,13 +238,13 @@ footer {
         background-color: #fff;
     }
     .input-group-navbar .btn {
-        background-color: #737cf5;
+        background-cdfolor: #737cf5;
         color: #fff;
         font-family: 'Poppins', sans-serif;
         cursor: pointer;
         z-index: 10000;
     }
-
+d
     .navbar-expand .navba-nav .dropdown-menu {
         box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .05);
     }
