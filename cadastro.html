@@ -172,47 +172,122 @@
             <main class="content px-3 py-4"> <!--inicio Tela principal-->
                 <div class="container">
                     <div class="row">
-                      <div class="col mb-5">
-                        <h1 class="display-4">Cadastro de Pacientes</h1>
-                      </div>
+                        <div class="col mb-5">
+                            <h1 class="display-4">Cadastro de Pacientes</h1>
+                        </div>
                     </div>
               
-                    <div class="row p-2">
-                      <label for=""> Nome: </label>
-                      <div class="col-md-8">
-                        <input type="text" class="form-control" placeholder="Digite o nome do paciente" id="nome_paciente" required/>
-                      </div>
+                    <div class="row mb-2 p-2"> 
+                        <div class="col-md-8"> <!--Nome paciente-->
+                            <label for=""> Nome: </label>
+                            <input type="text" class="form-control" placeholder="Digite o nome do paciente" id="nome_paciente" required/>
+                        </div> <!--/Nome paciente-->
               
-                      <div class="col-md-2">
-                        <input type="date" class="form-control" id="nascimento" />
-                      </div>
+                        <div class="col-md-4"> <!--Data Nascimento-->
+                            <label for=""> Data de Nascimento: </label>
+                            <input type="date" class="form-control" id="nascimento" />
+                        </div> <!--/Data Nascimento-->
+                    </div> 
+              
+                    <div class="row mb-2 p-2"> 
+                        <div class="col-md-4"> <!--Sexualidade-->
+                            <label for="sexo">Sexo:</label>
+                            <select class="form-control" id="sexo">
+                                <option value="">selecionar &#9662;</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select> <!--/Sexualidade-->
+                        </div>
+              
+                        <div class="col-md-4"> <!--Telefone-->
+                            <label for=""> Telefone:</label>
+                            <input type="tel" class="form-control" placeholder="Telefone" id="telefone" />
+                        </div> <!--/Telefone-->
+
+                        <div class="col-md-4"> <!--Documento-->
+                            <label for="documento">Tipo Documento:</label>
+                            <select class="form-control" id="sexo">
+                                <option value="">selecionar &#9662;</option>
+                                <option value="cpf">CPF</option>
+                                <option value="cnh">Carteira de Habilitação</option>
+                                <option value="pass">Passaporte</option>
+                                <option value="rg">Identidade</option>
+                            </select>
+                        </div> <!--/Documento-->            
                     </div>
-              
-                    <div class="row mb-2 p-3">
-                      <label for="sexo">Sexo:</label>
-                      <div class="col-md-2">
-                        <select class="form-control" id="sexo">
-                          <option value="">selecionar</option>
-                          <option value="masculino">Masculino</option>
-                          <option value="feminino">Feminino</option>
-                        </select>
-                      </div>
-              
-                      <div class="col-md-4">
-                        <input type="tel" class="form-control" placeholder="Telefone" id="telefone" />
-                      </div>
-              
-                      <div class="col-md-4">
-                        <select class="form-control" id="especialidade">
-                          <option value="">Especialidade</option>
-                          <option value="clinic">Clínico Geral</option>
-                          <option value="orto">Ortopedista</option>
-                          <option value="ped">Pediatra</option>
-                          <option value="psico">Psicólogo</option>
-                        </select>
-                      </div>
-              
+
+                    <div class="row mb-2 p-2"> <!--Paternidade Paciente-->
+                        <div class="col-md-6">
+                            <label for=""> Nome da Mãe: </label>
+                            <input type="text" class="form-control" placeholder="Nome da mãe" id="nome_mae" required/>
+                         </div> 
+
+                         <div class="col-md-6">
+                            <label for=""> Nome da pai: </label>
+                            <input type="text" class="form-control" placeholder="Nome do pai" id="nome_pai" required/>
+                         </div> 
+                    </div> <!--/Paternidade Paciente-->
+
+                    <div class="row mb-2 p-2"> <!--Naturalidade Paciente-->
+                        <div class="col-md-6">
+                            <label for=""> Nacionalidade: </label>
+                            <input type="text" class="form-control" placeholder="País de origem" id="nacionalidade"/>
+                         </div> 
+
+                         <div class="col-md-6">
+                            <label for=""> Naturalidade: </label>
+                            <input type="text" class="form-control" placeholder="Cidade natal" id="naturalidade" required/>
+                         </div> 
+                    </div> <!--/Naturalidade Paciente-->
+                    
+                    <hr>                      
+
+                    <div class="container">
+                        <div class="row mb-2 p-2"> <!--CEP paciente-->
+                            <div class="col-md-4">
+                                <label for=""> CEP: </label>
+                                <input type="text" class="form-control" placeholder="Digite seu CEP" id="cep_paciente" required/>
+                             </div> 
+                        </div> <!--/CEP paciente-->
+
+                        <div class="row mb-2 p-2"> <!--Lougradouro-->
+                            <div class="col-md-4">
+                                <label for="lograd">Logradouro:</label>
+                                  <select class="form-control" id="logradouro"> 
+                                  <option value=""> selecionar &#9662;</option>
+                                  <option value="rua">rua</option>
+                                  <option value="boulev">Boulevard</option>
+                                  <option value="chac">Chácara</option>
+                                  <option value="conj">Travessa</option>
+                                  <option value="campo">campo</option>
+                                  <option value="avenida">Avenida</option>
+                                  <option value="estacao">Estação</option>
+                                  <option value="comu">Comunidade</option>
+                                  </select>
+                            </div> <!--/Lougradouro-->
+
+                            <div class="col-md-8"> <!--Endereço-->
+                                <label for="endereco">Endereço: </label>
+                                <input type="text" class="form-control" id="endereco" />
+                            </div> <!--/Endereço-->
+                        </div>
                     </div>
+
+                    <hr>
+
+                    <div class="row mb-2 p-3"> <!--Tipo de atendimento-->               
+                        <div class="col-md-4">
+                          <select class="form-control" id="especialidade">
+                            <i class="fas fa-down-arrow"></i>  
+                            <option value="">Especialidade &#9662;</option>
+                            <option value="clinic">Clínico Geral</option>
+                            <option value="orto">Ortopedista</option>
+                            <option value="ped">Pediatra</option>
+                            <option value="psico">Psicólogo</option>
+                          </select>
+                        </div> <!--/Tipo de atendimento-->    
+                      </div>
+
                     <div class="col-md-2 d-flex justify-content-center" style="background: none;">
                       <button type="button" class="btn btn-primary" onclick="cadastrarDespesa()">
                         Enviar
